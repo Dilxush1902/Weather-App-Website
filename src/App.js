@@ -13,7 +13,7 @@ const App = () => {
 		const [value,setValue]=useState("")
 		const [data,setData]=useState([])
 		const [country,setCountry]=useState("Uzbekistan");
-		const searchHamdle = () => {
+		const searchHandle = () => {
 			console.log("Handle")
 			fetchWeather(value)
 				.then(res=> {
@@ -89,8 +89,8 @@ const App = () => {
 							</div>
 							<div data-aos="fade-left"  className="column_app" >
 									<div className="search_panel">
-										<input type="text" value={value} onKeyDown={(e)=>{e.key ==="Enter"&&searchHamdle()}} onChange={onChange} placeholder="Another location"/>
-										<button onClick={searchHamdle} type="button" ><FiSearch/></button>
+										<input type="text" value={value} onKeyDown={(e)=>{e.key ==="Enter"&&searchHandle()}} onChange={onChange} placeholder="Another location"/>
+										<button onClick={searchHandle} type="button" ><FiSearch/></button>
 									</div>
 									<div className="center_panel">
 										<div className="country_panel">
